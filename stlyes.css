@@ -1,59 +1,29 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Define a color palette */
+:root {
+    --primary: #ff4500;    /* Bold accent color */
+    --secondary: #1e90ff;  /* Links and highlights */
+    --background: #f0f0f0; /* Light background */
+    --text: #333;          /* Dark text */
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     text-align: center;
     padding: 2rem;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
 /* Sections */
-section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #1e90ff;
-}
-
-#about p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Project Grid */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    color: var(--primary);
 }
 
 .project {
@@ -64,43 +34,16 @@ section h2 {
     transition: transform 0.3s;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-}
-
-.project h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.project p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
 .project a {
-    color: #1e90ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project a:hover {
-    text-decoration: underline;
+    color: var(--secondary);
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: var(--text);
     color: white;
-    text-align: center;
-    padding: 1.5rem;
 }
 
 footer a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    color: var(--secondary);
 }
