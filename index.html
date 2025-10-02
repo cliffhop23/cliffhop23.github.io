@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Cybersecurity Expert</title>
+    <title>Thomas Hopkinson | Cybersecurity Expert</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -292,100 +292,6 @@
             color: var(--text-secondary);
         }
         
-        /* Portfolio Section */
-        .portfolio {
-            padding: 100px 0;
-        }
-        
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-        
-        .portfolio-item {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            height: 250px;
-        }
-        
-        .portfolio-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .portfolio-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(10, 25, 47, 0.9);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-        
-        .portfolio-item:hover .portfolio-overlay {
-            opacity: 1;
-        }
-        
-        .portfolio-item:hover .portfolio-image {
-            transform: scale(1.1);
-        }
-        
-        .portfolio-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-        }
-        
-        .portfolio-category {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Testimonials Section */
-        .testimonials {
-            padding: 100px 0;
-            background-color: rgba(10, 25, 47, 0.7);
-        }
-        
-        .testimonial-slider {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .testimonial {
-            background-color: #112240;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            color: var(--secondary-color);
-        }
-        
-        .testimonial-position {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        
         /* Contact Section */
         .contact {
             padding: 100px 0;
@@ -539,8 +445,6 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -681,77 +585,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">My Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project 1" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Financial Institution Security Audit</h3>
-                        <p class="portfolio-category">Penetration Testing</p>
-                        <a href="#" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project 2" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Healthcare Provider Security Architecture</h3>
-                        <p class="portfolio-category">Security Design</p>
-                        <a href="#" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project 3" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">E-commerce Platform Breach Response</h3>
-                        <p class="portfolio-category">Incident Response</p>
-                        <a href="#" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1544890225-2f3faec4cd60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project 4" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Government Agency Red Team Exercise</h3>
-                        <p class="portfolio-category">Red Team Operations</p>
-                        <a href="#" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project 5" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">IoT Device Security Assessment</h3>
-                        <p class="portfolio-category">Vulnerability Assessment</p>
-                        <a href="#" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project 6" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3 class="portfolio-title">Enterprise Security Training Program</h3>
-                        <p class="portfolio-category">Security Training</p>
-                        <a href="#" class="btn">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <p class="testimonial-text">"The security assessment conducted was incredibly thorough and identified critical vulnerabilities we had overlooked for years. The remediation guidance was clear and actionable, helping us strengthen our security posture significantly."</p>
-                    <h4 class="testimonial-author">Sarah Johnson</h4>
-                    <p class="testimonial-position">CIO, Global Financial Services</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -765,7 +598,7 @@
                         </div>
                         <div>
                             <h3>Location</h3>
-                            <p>New York City, NY</p>
+                            <p>Saint Paul, MN</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -774,7 +607,7 @@
                         </div>
                         <div>
                             <h3>Email</h3>
-                            <p>contact@cybersecurityexpert.com</p>
+                            <p>cliffhopkinson96@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -783,7 +616,7 @@
                         </div>
                         <div>
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>6513075843</p>
                         </div>
                     </div>
                 </div>
@@ -812,11 +645,12 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-medium-m"></i></a>
+            <a href="https://www.linkedin.com/in/cliffhopkinson/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/cliffhop23"><i class="fab fa-github"></i></a>
             </div>
-            <p class="footer-text">&copy; 2023 CyberShield. All rights reserved.</p>
-
-
+        <p class="footer-text">&copy; 2024 Thomas Hopkinson. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
